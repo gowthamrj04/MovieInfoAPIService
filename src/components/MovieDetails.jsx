@@ -4,11 +4,6 @@ import SecondTab from "./SecondTab";
 import "../style.css";
 
 class MovieDetails extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-
   render() {
     return (
       <Fragment>

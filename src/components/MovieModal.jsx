@@ -7,8 +7,6 @@ class MovieModal extends Component {
   }
 
   render() {
-    console.log("Modal ", this.props.movieInfo);
-
     return (
       <div className="readMore">
         <div className="modal" id="exampleModal" tabIndex="-1" role="dialog">

@@ -6,17 +6,16 @@ import MovieFullDetails from "./MovieFullDetails";
 class SecondTab extends Component {
   constructor(props) {
     super(props);
-    this.state = { movieInfo: [], showInfo: false };
+    this.state = { movieInfo: [], showInfo: false, error: [] };
   }
 
   handleClick(movieTitle, movieYear) {
     MovieApiService.movieDetails(movieTitle, movieYear)
       .then((response) => {
-        console.log(response.data);
         this.setState({ movieInfo: response.data, showInfo: true });
       })
       .catch((error) => {
-        console.log(error);
+        this.setState({ error: error.message });
       });
   }
   render() {
