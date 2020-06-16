@@ -1,0 +1,27 @@
+.nav-tabs .nav-item a[area-selected="true"] {
+  color: #f44336 !important;
+}
+.movie-details {
+  text-align: center;
+}
+td.tableHeadings {
+  color: #fff;
+  background-color: blue;
+}
+td.tableValue {
+  color: #8a8181;
+}
+.movieShortInfo h4 {
+  color: #8a8181;
+}
+.modal-dialog {
+  max-width: 1000px !important;
+  max-height: 735px !important;
+}
+.movieDetailed {
+  max-height: 500px;
+  overflow-y: auto;
+}
+.poster {
+  text-align: center;
+}
